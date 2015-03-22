@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BargeData" Class="BargeDataContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mwfogvdb01.opengovideo.com;Initial Catalog=BargeData;Persist Security Info=True;User ID=barkley" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BargeDataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Companies" Member="Companys">
+    <Type Name="Companys">
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BuilderName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Companys_Equipment" Member="Equipments" ThisKey="CompanyID" OtherKey="CompanyID" Type="Equipment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DraftLevel" Member="DraftLevels">
+    <Type Name="DraftLevels">
+      <Column Name="ID" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DraftLevel" Storage="_DraftLevel1" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tonnage" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Equipment_DraftLevels" Member="Equipment" ThisKey="ID" OtherKey="ID" Type="Equipment" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Equipment" Member="Equipments">
+    <Type Name="Equipment">
+      <Column Name="ID" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Length" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Width" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Height" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LightDraft" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Equipment_DraftLevels" Member="DraftLevel" ThisKey="ID" OtherKey="ID" Type="DraftLevels" />
+      <Association Name="Companys_Equipment" Member="Companys" ThisKey="CompanyID" OtherKey="CompanyID" Type="Companys" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.csp_Duplicate_Barge" Method="csp_Duplicate_Barge">
+    <Parameter Name="oldID" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="newID" Type="System.String" DbType="VarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

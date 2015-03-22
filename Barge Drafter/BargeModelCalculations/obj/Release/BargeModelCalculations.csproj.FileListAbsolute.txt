@@ -1,0 +1,4 @@
+C:\Vault\Bargedata.com\Barge Drafter\BargeModelCalculations\bin\Release\BargeModelCalculations.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeModelCalculations\bin\Release\BargeModelCalculations.pdb
+C:\Vault\Bargedata.com\Barge Drafter\BargeModelCalculations\obj\Release\BargeModelCalculations.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeModelCalculations\obj\Release\BargeModelCalculations.pdb

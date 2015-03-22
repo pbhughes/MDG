@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scales>
+  <Node ID="1" Location="Back">
+    <Roll>
+      <Raw>
+        <Low>0</Low>
+        <High>65535</High>
+      </Raw>
+      <Real>
+        <Low>-10</Low>
+        <High>10</High>
+      </Real>
+    </Roll>
+   </Node>
+  <Node ID="2" Location="Front">
+    <Raw>
+      <Low>0</Low>
+      <High>65535</High>
+    </Raw>
+    <Real>
+      <Low>-10</Low>
+      <High>10</High>
+    </Real>
+  </Node>
+</Scales>

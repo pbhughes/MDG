@@ -1,0 +1,5 @@
+SCC = This is a source code control file
+
+[DraftingControls.csproj]
+SCC_Aux_Path = http://54.236.223.143/VaultService|Amazon:1
+SCC_Project_Name = $/Barge Drafter/Controls/AttitudeIndicator

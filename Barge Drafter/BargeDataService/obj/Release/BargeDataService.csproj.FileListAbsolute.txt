@@ -1,0 +1,8 @@
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\bin\Release\MDG.BargeService.dll.config
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\bin\Release\MDG.BargeService.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\bin\Release\MDG.BargeService.XmlSerializers.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\bin\Release\MDG.BargeService.pdb
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\obj\Release\ResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\obj\Release\MDG.BargeService.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\obj\Release\MDG.BargeService.pdb
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\obj\Release\MDG.BargeService.XmlSerializers.dll

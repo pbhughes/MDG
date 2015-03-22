@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataLogModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DataLogEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DataLogs" EntityType="DataLogModel1.DataLog" />
+  </EntityContainer>
+  <EntityType Name="DataLog">
+    <Key>
+      <PropertyRef Name="ReadingDate" />
+      <PropertyRef Name="DayNumber" />
+    </Key>
+    <Property Type="DateTime" Name="ReadingDate" Nullable="false" />
+    <Property Type="Double" Name="SternAngle" Nullable="false" />
+    <Property Type="Double" Name="SternWaterSideDraft" Nullable="false" />
+    <Property Type="Double" Name="SternDockSideDraft" Nullable="false" />
+    <Property Type="Double" Name="BowAngle" Nullable="false" />
+    <Property Type="Double" Name="BowWaterSideDraft" Nullable="false" />
+    <Property Type="Double" Name="BowDockSideDraft" Nullable="false" />
+    <Property Type="String" Name="LightDraft" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HeavyDraft" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DayNumber" Nullable="false" />
+    <Property Type="Double" Name="Depth1" />
+    <Property Type="Double" Name="Depth2" />
+  </EntityType>
+</Schema>

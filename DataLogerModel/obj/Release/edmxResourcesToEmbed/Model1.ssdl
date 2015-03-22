@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataLogModel1.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DataLogModel1StoreContainer">
+    <EntitySet Name="DataLog" EntityType="DataLogModel1.Store.DataLog" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="DataLog">
+    <Key>
+      <PropertyRef Name="ReadingDate" />
+      <PropertyRef Name="DayNumber" />
+    </Key>
+    <Property Name="ReadingDate" Type="datetime" Nullable="false" />
+    <Property Name="SternAngle" Type="float" Nullable="false" />
+    <Property Name="SternWaterSideDraft" Type="float" Nullable="false" />
+    <Property Name="SternDockSideDraft" Type="float" Nullable="false" />
+    <Property Name="BowAngle" Type="float" Nullable="false" />
+    <Property Name="BowWaterSideDraft" Type="float" Nullable="false" />
+    <Property Name="BowDockSideDraft" Type="float" Nullable="false" />
+    <Property Name="LightDraft" Type="nvarchar" MaxLength="10" />
+    <Property Name="HeavyDraft" Type="nvarchar" MaxLength="10" />
+    <Property Name="DayNumber" Type="int" Nullable="false" />
+    <Property Name="Depth1" Type="float" />
+    <Property Name="Depth2" Type="float" />
+  </EntityType>
+</Schema>

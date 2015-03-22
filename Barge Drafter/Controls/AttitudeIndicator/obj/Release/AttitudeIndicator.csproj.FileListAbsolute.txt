@@ -1,0 +1,5 @@
+C:\Vault\Bargedata.com\Barge Drafter\Controls\AttitudeIndicator\obj\Release\ResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Barge Drafter\Controls\AttitudeIndicator\obj\Release\AttitudeIndicator.g.cs
+C:\Vault\Bargedata.com\Barge Drafter\Controls\AttitudeIndicator\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Vault\Bargedata.com\Barge Drafter\Controls\AttitudeIndicator\obj\Release\MDG.Visuals_MarkupCompile.cache
+C:\Vault\Bargedata.com\Barge Drafter\Controls\AttitudeIndicator\obj\Release\MDG.Visuals_MarkupCompile.lref

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataLogModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DataLogModelStoreContainer">
+    <EntitySet Name="DataLog" EntityType="DataLogModel.Store.DataLog" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="DataLog">
+    <Key>
+      <PropertyRef Name="ReadingID" />
+    </Key>
+    <Property Name="ReadingID" Type="bigint" Nullable="false" />
+    <Property Name="ReadingDate" Type="datetime" Nullable="false" />
+    <Property Name="SternAngle" Type="float" Nullable="false" />
+    <Property Name="SternWaterSideDraft" Type="float" Nullable="false" />
+    <Property Name="SternDockSideDraft" Type="float" Nullable="false" />
+    <Property Name="BowAngle" Type="float" Nullable="false" />
+    <Property Name="BowWaterSideDraft" Type="float" Nullable="false" />
+    <Property Name="BowDockSideDraft" Type="float" Nullable="false" />
+    <Property Name="LightDraft" Type="nvarchar" MaxLength="10" />
+    <Property Name="HeavyDraft" Type="nvarchar" MaxLength="10" />
+    <Property Name="RunID" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

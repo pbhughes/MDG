@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BargeDataContext">
+  <DataContextMoniker Name="/BargeDataContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="65972e88-cf35-4154-ba03-fa3935eb40ff" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/BargeDataContextDataContext/Companys" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecde7b0b-75de-4874-ad78-dd35556a8c36" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="346ca4b2-b0d6-4c23-abff-9aed19e89cf8" absoluteBounds="6.25, 1.25, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/BargeDataContextDataContext/DraftLevels" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80df25a6-60b2-43c4-8929-973d8af98a5d" absoluteBounds="6.265, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b34a072b-e7b8-40c3-90fd-f75830337c9f" absoluteBounds="3.5, 0.875, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/BargeDataContextDataContext/Equipment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cad6e781-eaa5-4e67-b8dc-142d06a7ec79" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 1.94314697265625); (6.25 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BargeDataContextDataContext/Equipment/Equipment_DraftLevels" />
+      <nodes>
+        <classShapeMoniker Id="b34a072b-e7b8-40c3-90fd-f75830337c9f" />
+        <classShapeMoniker Id="346ca4b2-b0d6-4c23-abff-9aed19e89cf8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BargeDataContextDataContext/Companys/Companys_Equipment" />
+      <nodes>
+        <classShapeMoniker Id="65972e88-cf35-4154-ba03-fa3935eb40ff" />
+        <classShapeMoniker Id="b34a072b-e7b8-40c3-90fd-f75830337c9f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

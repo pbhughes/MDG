@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="MDG.Visuals.DraftMeasurementTile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MDG.Visuals"
+             xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:model="clr-namespace:MDG.Model;assembly=MDG.BargeModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="225" d:DesignWidth="250">
+    <UserControl.DataContext>
+        <model:DraftReadingModel x:Name="draftReading"/>
+    </UserControl.DataContext>
+    <Grid>
+        <mahApps:Tile x:Name="mahTile" Width="245" Height="215" Title="{Binding Title}">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <local:DraftMeasurmentBox RawReading="{Binding AboveWaterReading}"></local:DraftMeasurmentBox>
+                    <local:DraftMeasurmentBox RawReading="{Binding BelowWaterReading}" ></local:DraftMeasurmentBox>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <CheckBox>Show</CheckBox>
+                    <TextBlock VerticalAlignment="Center" FontSize="40" Height="50" Width="50" Margin="10" 
+                           HorizontalAlignment="Center" TextAlignment="Center"
+                               Text="{Binding BargeDepth}"></TextBlock>
+                    <CheckBox>Show</CheckBox>
+                </StackPanel>
+               
+            </StackPanel>
+           
+        </mahApps:Tile>
+       
+    </Grid>
+</UserControl>

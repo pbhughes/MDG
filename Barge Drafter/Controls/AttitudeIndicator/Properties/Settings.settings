@@ -1,0 +1,117 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MDG.Visuals.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RollDirection" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="DeckPlateOptions" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;5.0&lt;/string&gt;
+  &lt;string&gt;4.5&lt;/string&gt;
+  &lt;string&gt;4.0&lt;/string&gt;
+  &lt;string&gt;3.5&lt;/string&gt;
+  &lt;string&gt;3.0&lt;/string&gt;
+  &lt;string&gt;2.5&lt;/string&gt;
+  &lt;string&gt;2.0&lt;/string&gt;
+  &lt;string&gt;1.5&lt;/string&gt;
+  &lt;string&gt;1.0&lt;/string&gt;
+  &lt;string&gt;.5&lt;/string&gt;
+  &lt;string&gt;0.0&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="BargeWidthOptions" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;10&lt;/string&gt;
+  &lt;string&gt;11&lt;/string&gt;
+  &lt;string&gt;12&lt;/string&gt;
+  &lt;string&gt;13&lt;/string&gt;
+  &lt;string&gt;14&lt;/string&gt;
+  &lt;string&gt;15&lt;/string&gt;
+  &lt;string&gt;16&lt;/string&gt;
+  &lt;string&gt;17&lt;/string&gt;
+  &lt;string&gt;18&lt;/string&gt;
+  &lt;string&gt;19&lt;/string&gt;
+  &lt;string&gt;20&lt;/string&gt;
+  &lt;string&gt;21&lt;/string&gt;
+  &lt;string&gt;22&lt;/string&gt;
+  &lt;string&gt;23&lt;/string&gt;
+  &lt;string&gt;24&lt;/string&gt;
+  &lt;string&gt;25&lt;/string&gt;
+  &lt;string&gt;26&lt;/string&gt;
+  &lt;string&gt;27&lt;/string&gt;
+  &lt;string&gt;28&lt;/string&gt;
+  &lt;string&gt;29&lt;/string&gt;
+  &lt;string&gt;30&lt;/string&gt;
+  &lt;string&gt;31&lt;/string&gt;
+  &lt;string&gt;32&lt;/string&gt;
+  &lt;string&gt;33&lt;/string&gt;
+  &lt;string&gt;34&lt;/string&gt;
+  &lt;string&gt;35&lt;/string&gt;
+  &lt;string&gt;36&lt;/string&gt;
+  &lt;string&gt;37&lt;/string&gt;
+  &lt;string&gt;38&lt;/string&gt;
+  &lt;string&gt;39&lt;/string&gt;
+  &lt;string&gt;40&lt;/string&gt;
+  &lt;string&gt;41&lt;/string&gt;
+  &lt;string&gt;42&lt;/string&gt;
+  &lt;string&gt;43&lt;/string&gt;
+  &lt;string&gt;44&lt;/string&gt;
+  &lt;string&gt;45&lt;/string&gt;
+  &lt;string&gt;46&lt;/string&gt;
+  &lt;string&gt;47&lt;/string&gt;
+  &lt;string&gt;48&lt;/string&gt;
+  &lt;string&gt;49&lt;/string&gt;
+  &lt;string&gt;50&lt;/string&gt;
+  &lt;string&gt;51&lt;/string&gt;
+  &lt;string&gt;52&lt;/string&gt;
+  &lt;string&gt;53&lt;/string&gt;
+  &lt;string&gt;54&lt;/string&gt;
+  &lt;string&gt;55&lt;/string&gt;
+  &lt;string&gt;56&lt;/string&gt;
+  &lt;string&gt;57&lt;/string&gt;
+  &lt;string&gt;58&lt;/string&gt;
+  &lt;string&gt;59&lt;/string&gt;
+  &lt;string&gt;60&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="BargeDepthOptions" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;0.0&lt;/string&gt;
+  &lt;string&gt;1.0&lt;/string&gt;
+  &lt;string&gt;2.0&lt;/string&gt;
+  &lt;string&gt;3.0&lt;/string&gt;
+  &lt;string&gt;4.0&lt;/string&gt;
+  &lt;string&gt;5.0&lt;/string&gt;
+  &lt;string&gt;6.0&lt;/string&gt;
+  &lt;string&gt;7.0&lt;/string&gt;
+  &lt;string&gt;8.0&lt;/string&gt;
+  &lt;string&gt;9.0&lt;/string&gt;
+  &lt;string&gt;10.0&lt;/string&gt;
+  &lt;string&gt;11.0&lt;/string&gt;
+  &lt;string&gt;12.0&lt;/string&gt;
+  &lt;string&gt;13.0&lt;/string&gt;
+  &lt;string&gt;14.0&lt;/string&gt;
+  &lt;string&gt;15.0&lt;/string&gt;
+  &lt;string&gt;16.0&lt;/string&gt;
+  &lt;string&gt;17.0&lt;/string&gt;
+  &lt;string&gt;18.0&lt;/string&gt;
+  &lt;string&gt;19.0&lt;/string&gt;
+  &lt;string&gt;20.0&lt;/string&gt;
+  &lt;string&gt;21.0&lt;/string&gt;
+  &lt;string&gt;22.0&lt;/string&gt;
+  &lt;string&gt;23.0&lt;/string&gt;
+  &lt;string&gt;24.0&lt;/string&gt;
+  &lt;string&gt;25.0&lt;/string&gt;
+  &lt;string&gt;26.0&lt;/string&gt;
+  &lt;string&gt;27.0&lt;/string&gt;
+  &lt;string&gt;28.0&lt;/string&gt;
+  &lt;string&gt;29.0&lt;/string&gt;
+  &lt;string&gt;30.0&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

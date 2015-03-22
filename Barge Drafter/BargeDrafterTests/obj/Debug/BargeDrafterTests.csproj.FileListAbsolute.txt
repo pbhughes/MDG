@@ -1,0 +1,13 @@
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\BargeDrafterTests.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\BargeDrafterTests.pdb
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\WSMBS.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\MDG.BargeModel.pdb
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\WSMBS.xml
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\MDG.BargeModel_Accessor.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\MDG.BargeModel_Accessor.pdb
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\obj\Debug\BargeDrafterTests.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\obj\Debug\BargeDrafterTests.pdb
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\MDG.BargeService.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\bin\Debug\MDG.BargeService.pdb

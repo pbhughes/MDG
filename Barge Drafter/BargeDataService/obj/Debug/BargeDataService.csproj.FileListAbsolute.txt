@@ -1,0 +1,6 @@
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\bin\Debug\MDG.BargeService.dll.config
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\bin\Debug\MDG.BargeService.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\bin\Debug\MDG.BargeService.pdb
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\obj\Debug\ResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\obj\Debug\MDG.BargeService.dll
+C:\Vault\Bargedata.com\Barge Drafter\BargeDataService\obj\Debug\MDG.BargeService.pdb

@@ -1,0 +1,117 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftingControls", "Controls\AttitudeIndicator\DraftingControls.csproj", "{260EEE51-46CD-4FD3-9C97-26492C03EC78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BargeModel", "Barge Model\BargeModel.csproj", "{253FBF97-9382-43C7-80F7-171FA0380800}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14240689-CB3F-4D66-BC83-E6A6E8156F0B}"
+	ProjectSection(SolutionItems) = preProject
+		Barge Drafter.vsmdi = Barge Drafter.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLogerModel", "..\DataLogerModel\DataLogerModel.csproj", "{65FAE5EA-78A4-4AD5-8800-C325210EA09D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BargeModelCalculations", "BargeModelCalculations\BargeModelCalculations.csproj", "{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{05441736-C9C2-40FE-B15B-F93405652799}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Barge Drafter.vsmdi
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectUniqueName0 = Controls\\AttitudeIndicator\\DraftingControls.csproj
+		SccProjectName0 = $/Barge\u0020Drafter/Controls/AttitudeIndicator
+		SccLocalPath0 = Controls\\AttitudeIndicator
+		SccProvider0 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = Barge\u0020Model\\BargeModel.csproj
+		SccProjectName1 = $/Barge\u0020Drafter/Barge\u0020Model
+		SccLocalPath1 = Barge\u0020Model
+		SccProvider1 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = ..\\DataLogerModel\\DataLogerModel.csproj
+		SccProjectName2 = $/Bargedata.com/DataLogerModel
+		SccLocalPath2 = ..\\DataLogerModel
+		SccProvider2 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
+		CanCheckoutShared = false
+		SccProjectUniqueName3 = BargeModelCalculations\\BargeModelCalculations.csproj
+		SccProjectName3 = $/Barge\u0020Drafter
+		SccLocalPath3 = .
+		SccProvider3 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection3 = BargeModelCalculations\\
+		SccProjectUniqueName4 = Main\\Main.csproj
+		SccProjectName4 = $/Barge\u0020Drafter/Main
+		SccLocalPath4 = Main
+		SccProvider4 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{260EEE51-46CD-4FD3-9C97-26492C03EC78}.Release|x86.ActiveCfg = Release|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{253FBF97-9382-43C7-80F7-171FA0380800}.Release|x86.ActiveCfg = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|x86.ActiveCfg = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{05441736-C9C2-40FE-B15B-F93405652799}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Debug|x86.ActiveCfg = Debug|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Debug|x86.Build.0 = Debug|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Release|Any CPU.ActiveCfg = Release|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Release|Mixed Platforms.Build.0 = Release|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Release|x86.ActiveCfg = Release|x86
+		{05441736-C9C2-40FE-B15B-F93405652799}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

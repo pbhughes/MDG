@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="FFAB6F87-310F-4F7E-957D-C3D67FA4AA59" ModuleId="BargeDataInterface" />
+  <Module PersistentId="65FAE5EA-78A4-4AD5-8800-C325210EA09D" ModuleId="DataLogerModel" />
+  <Module PersistentId="AD6332FB-9710-4D41-88F1-D57A60C54F3E" ModuleId="DataLogViewer" />
+</Modules>

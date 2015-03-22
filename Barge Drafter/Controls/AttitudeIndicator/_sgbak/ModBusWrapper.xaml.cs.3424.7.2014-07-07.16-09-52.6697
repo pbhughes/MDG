@@ -1,0 +1,62 @@
+﻿using System;
+
+
+namespace MDG.Visuals
+{
+    /// <summary>
+    /// Interaction logic for ModBusWrapper.xaml
+    /// </summary>
+    public partial class ModBusWrapper : IDisposable
+    {
+       
+
+        public ModBusWrapper()
+        {
+            InitializeComponent();
+           // barge.ModBusIsOn = false;
+            
+            //load barge width options
+            foreach (var option in Properties.Settings.Default.BargeWidthOptions)
+            {
+                int item = 0;
+                bool worked = int.TryParse(option, out item);
+                if(worked)
+                    barge.AddBargeWidthOption(item);
+            }
+
+            //load barge depth options
+            foreach (var option in Properties.Settings.Default.BargeDepthOptions)
+            {
+                double item = 0;
+                bool worked = double.TryParse ( option, out item );
+                if (worked)
+                    barge.AddBargeDepthOptions(item );
+            }
+
+            //load deck plate options
+            foreach (var option in Properties.Settings.Default.DeckPlateOptions)
+            {
+                double item = 0;
+                bool worked = double.TryParse(option, out item);
+                if(worked)
+                    barge.AddDeckPlateOption(item);
+            }
+
+            //Load inches
+            barge.AddInchOptions();
+
+        }
+
+       
+
+        public void Dispose ( )
+        {
+            if(barge != null)
+                barge.Dispose();
+        }
+
+      
+
+    }
+
+}

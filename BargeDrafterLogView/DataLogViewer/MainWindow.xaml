@@ -1,0 +1,29 @@
+﻿<Window x:Class="MDG.DataLogViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:model="clr-namespace:MDG.DataLogger;assembly=BargeDataInterface"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.DataContext>
+            <model:BargeData x:Name="bargeData" />
+        </Grid.DataContext>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- Command Bar -->
+        <DockPanel  Grid.Row="0" Margin="5" LastChildFill="True" >
+            <Button DockPanel.Dock="Left"  Click="Button_Click" Margin="5">Refresh</Button>
+            <Button DockPanel.Dock="Left" Margin="5" Click="ClearButtonClick">Clear Log</Button>
+            <CheckBox DockPanel.Dock="Left" x:Name="chkBox" VerticalAlignment="Center" HorizontalContentAlignment="Right"
+                    FlowDirection="RightToLeft" IsThreeState="False" Checked="CheckBox_Checked">Auto Update</CheckBox>
+            <Button DockPanel.Dock="Right" Width="100" Click="Export_ButtonClick">Export to Excel</Button>
+
+        </DockPanel>
+        <!-- Data Grid -->
+        <DataGrid x:Name="gridDataLog" Grid.Row="1" ItemsSource="{Binding DataLogFormated}" 
+                  SelectionMode="Extended" SelectionUnit="FullRow"   >
+        </DataGrid>
+    </Grid>
+</Window>

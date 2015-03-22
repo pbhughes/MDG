@@ -1,0 +1,16 @@
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\bin\Debug\TestHarness.exe
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\bin\Debug\TestHarness.pdb
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\bin\Debug\DraftPicker.dll
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\bin\Debug\DraftPicker.pdb
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\TestHarness.csprojResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\MainWindow.g.cs
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\App.g.cs
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\TestHarness_MarkupCompile.cache
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\TestHarness_MarkupCompile.lref
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\MainWindow.baml
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\TestHarness.g.resources
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\TestHarness.Properties.Resources.resources
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\TestHarness.csproj.GenerateResource.Cache
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\TestHarness.exe
+C:\Vault\Bargedata.com\DraftPicker\TestHarness\obj\x86\Debug\TestHarness.pdb

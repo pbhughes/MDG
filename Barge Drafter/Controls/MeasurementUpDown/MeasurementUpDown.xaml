@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="MDG.Controls.MearsurementUpDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:extTk="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="45" d:DesignWidth="210" Padding="5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"  />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+        
+        <Border BorderBrush="Black" BorderThickness="2" Margin="1">
+        <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="Center" Grid.Row="0" Margin="5,3,5,3">
+            <extTk:IntegerUpDown x:Name="numFeet" 
+                                 Watermark="Feet.." Minimum="0"
+                                 Increment="1" Width="75" KeyDown="numFeet_KeyDown" Value="{Binding Feet}" />
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="2" Margin="1"  Grid.Row="0" Grid.Column="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <extTk:IntegerUpDown x:Name="numInches" Margin="5,3,5,3"
+                                 Watermark="Inches.." Minimum="0"
+                                 Increment="1" Width="75" Value="{Binding Inches}" />
+            </StackPanel>
+        </Border>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" ></StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1"
+                    HorizontalAlignment="Center"></StackPanel>
+    </Grid>
+</UserControl>

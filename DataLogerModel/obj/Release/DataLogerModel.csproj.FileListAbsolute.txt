@@ -1,0 +1,19 @@
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerMode\bin\Release\DataLog.sdf
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerMode\bin\Release\DataLogger.dll.config
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerMode\bin\Release\DataLogger.dll
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerMode\bin\Release\DataLogger.pdb
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerMode\obj\Release\DataLogger.dll
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerMode\obj\Release\DataLogger.pdb
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerMode\obj\Release\DataLogerModel.csprojResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerModel\bin\Release\DataLog.sdf
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerModel\bin\Release\DataLogger.dll.config
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerModel\bin\Release\DataLogger.dll
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerModel\bin\Release\DataLogger.pdb
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerModel\obj\Release\DataLogger.dll
+C:\Vault\Bargedata.com\Barge Drafter\DataLogerModel\obj\Release\DataLogger.pdb
+C:\Vault\Bargedata.com\DataLogerModel\bin\Release\DataLog.sdf
+C:\Vault\Bargedata.com\DataLogerModel\bin\Release\DataLogger.dll.config
+C:\Vault\Bargedata.com\DataLogerModel\bin\Release\DataLogger.dll
+C:\Vault\Bargedata.com\DataLogerModel\bin\Release\DataLogger.pdb
+C:\Vault\Bargedata.com\DataLogerModel\obj\Release\DataLogger.dll
+C:\Vault\Bargedata.com\DataLogerModel\obj\Release\DataLogger.pdb

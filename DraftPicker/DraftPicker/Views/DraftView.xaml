@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="DraftPicker.Views.DraftView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:assist="clr-namespace:DraftPicker.Helpers"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" 
+             d:DesignWidth="350" Padding="10" 
+             xmlns:my="clr-namespace:DraftPicker.Views">
+    <UserControl.Resources>
+        <assist:TitleAndValueConverter x:Key="converterTileAndValue" />
+    </UserControl.Resources>
+    <Grid x:Name="layoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition MaxHeight="50" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <my:KeyPad Grid.Column="0" Grid.RowSpan="1" Grid.Row="0"  HorizontalAlignment="Stretch" MinValue="0" MaxValue="17"
+                   x:Name="keyPadFeet"  VerticalAlignment="Stretch" Value="{Binding Path=Feet, Mode=TwoWay}" ValueLabel="Feet"/>
+        <my:KeyPad Grid.Column="1" Grid.RowSpan="1" Grid.Row="0"  HorizontalAlignment="Stretch" MinValue="0" MaxValue="11"
+                   x:Name="keyPadInches" VerticalAlignment="Stretch" Value="{Binding Path=Inches, Mode=TwoWay}" ValueLabel="Inches"  />
+        <TextBlock VerticalAlignment="Center" FontSize="20"
+                       HorizontalAlignment="Center" 
+                       Text="{Binding Title}" Grid.Row="1" Grid.Column="0" />
+
+        <TextBlock VerticalAlignment="Center" FontSize="20"
+                       HorizontalAlignment="Center" 
+                        Grid.Row="1" Grid.Column="1">
+            <TextBlock.Text>
+                <MultiBinding StringFormat="Total Inches:  {0}">
+                    <Binding Path="Value"/>
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+
+
+
+    </Grid>
+</UserControl>

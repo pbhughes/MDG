@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BargeDataInterface", "..\BargeDataInterface\BargeDataInterface.csproj", "{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLogerModel", "..\DataLogerModel\DataLogerModel.csproj", "{65FAE5EA-78A4-4AD5-8800-C325210EA09D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLogViewer", "DataLogViewer\DataLogViewer.csproj", "{AD6332FB-9710-4D41-88F1-D57A60C54F3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BargeModelCalculations", "..\Barge Drafter\BargeModelCalculations\BargeModelCalculations.csproj", "{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = ..\\BargeDataInterface\\BargeDataInterface.csproj
+		SccProjectName1 = $/Bargedata.com/BargeDataInterface
+		SccLocalPath1 = ..\\BargeDataInterface
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = ..\\DataLogerModel\\DataLogerModel.csproj
+		SccProjectName2 = $/Bargedata.com/DataLogerModel
+		SccLocalPath2 = ..\\DataLogerModel
+		CanCheckoutShared = false
+		SccProjectUniqueName3 = DataLogViewer\\DataLogViewer.csproj
+		SccProjectName3 = $/Bargedata.com/BargeDrafterLogView/DataLogViewer
+		SccLocalPath3 = DataLogViewer
+		CanCheckoutShared = false
+		SccProjectUniqueName4 = ..\\Barge\u0020Drafter\\BargeModelCalculations\\BargeModelCalculations.csproj
+		SccProjectName4 = $/Barge\u0020Drafter
+		SccLocalPath4 = ..\\Barge\u0020Drafter
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection4 = BargeModelCalculations\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FFAB6F87-310F-4F7E-957D-C3D67FA4AA59}.Release|x86.ActiveCfg = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{65FAE5EA-78A4-4AD5-8800-C325210EA09D}.Release|x86.ActiveCfg = Release|Any CPU
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Debug|x86.ActiveCfg = Debug|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Debug|x86.Build.0 = Debug|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Release|Any CPU.ActiveCfg = Release|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Release|x86.ActiveCfg = Release|x86
+		{AD6332FB-9710-4D41-88F1-D57A60C54F3E}.Release|x86.Build.0 = Release|x86
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7A015683-FD60-4574-A3FD-C27B8DB8A0CA}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

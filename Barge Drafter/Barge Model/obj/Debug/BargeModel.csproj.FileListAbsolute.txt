@@ -1,0 +1,18 @@
+C:\Vault\Bargedata.com\BargeModel\bin\Debug\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\BargeModel\bin\Debug\MDG.BargeModel.pdb
+C:\Vault\Bargedata.com\BargeModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\BargeModel\obj\Debug\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\BargeModel\obj\Debug\MDG.BargeModel.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\MDG.BargeModel.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\obj\Debug\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\obj\Debug\MDG.BargeModel.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\WSMBS.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\WSMBS.xml
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\DataLog.sdf
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\MDG.BargeModel.dll.config
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\BargeModelCalculations.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\DataLogger.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\DataLogger.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\BargeModelCalculations.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\obj\Debug\BargeModel.csprojResolveAssemblyReference.cache

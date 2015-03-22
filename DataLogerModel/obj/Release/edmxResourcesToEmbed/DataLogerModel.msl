@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DataLogModelStoreContainer" CdmEntityContainer="DataLogEntities">
+    <EntitySetMapping Name="DataLogs">
+      <EntityTypeMapping TypeName="DataLogModel.DataLog">
+        <MappingFragment StoreEntitySet="DataLog">
+          <ScalarProperty Name="ReadingID" ColumnName="ReadingID" />
+          <ScalarProperty Name="ReadingDate" ColumnName="ReadingDate" />
+          <ScalarProperty Name="SternAngle" ColumnName="SternAngle" />
+          <ScalarProperty Name="SternWaterSideDraft" ColumnName="SternWaterSideDraft" />
+          <ScalarProperty Name="SternDockSideDraft" ColumnName="SternDockSideDraft" />
+          <ScalarProperty Name="BowAngle" ColumnName="BowAngle" />
+          <ScalarProperty Name="BowWaterSideDraft" ColumnName="BowWaterSideDraft" />
+          <ScalarProperty Name="BowDockSideDraft" ColumnName="BowDockSideDraft" />
+          <ScalarProperty Name="LightDraft" ColumnName="LightDraft" />
+          <ScalarProperty Name="HeavyDraft" ColumnName="HeavyDraft" />
+          <ScalarProperty Name="RunID" ColumnName="RunID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

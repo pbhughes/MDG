@@ -1,0 +1,10 @@
+C:\Vault\Bargedata.com\Data Model\bin\Debug\Data Model.dll.config
+C:\Vault\Bargedata.com\Data Model\bin\Debug\Data Model.dll
+C:\Vault\Bargedata.com\Data Model\bin\Debug\Data Model.pdb
+C:\Vault\Bargedata.com\Data Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Data Model\obj\Debug\Data Model.dll
+C:\Vault\Bargedata.com\Data Model\obj\Debug\Data Model.pdb
+C:\Vault\Bargedata.com\Data Model\bin\Debug\BargeDataModel.cs
+C:\Vault\Bargedata.com\Data Model\bin\Debug\BargeDataModel.designer.cs
+C:\Vault\Bargedata.com\Data Model\bin\Debug\BargeDataModel.dbml.layout
+C:\Vault\Bargedata.com\Data Model\obj\Debug\Data Model.g.resources

@@ -1,0 +1,10 @@
+C:\Vault\Bargedata.com\BargeDataInterface\obj\Debug\BargeDataInterface.csprojResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\BargeDataInterface\bin\Debug\DataLog.sdf
+C:\Vault\Bargedata.com\BargeDataInterface\bin\Debug\BargeDataInterface.dll
+C:\Vault\Bargedata.com\BargeDataInterface\bin\Debug\BargeDataInterface.pdb
+C:\Vault\Bargedata.com\BargeDataInterface\bin\Debug\DataLogger.dll
+C:\Vault\Bargedata.com\BargeDataInterface\bin\Debug\DataLogger.pdb
+C:\Vault\Bargedata.com\BargeDataInterface\obj\Debug\BargeDataInterface.dll
+C:\Vault\Bargedata.com\BargeDataInterface\obj\Debug\BargeDataInterface.pdb
+C:\Vault\Bargedata.com\BargeDataInterface\bin\Debug\BargeModelCalculations.dll
+C:\Vault\Bargedata.com\BargeDataInterface\bin\Debug\BargeModelCalculations.pdb

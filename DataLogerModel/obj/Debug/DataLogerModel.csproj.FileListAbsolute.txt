@@ -1,0 +1,6 @@
+C:\Vault\Bargedata.com\DataLogerModel\bin\Debug\DataLog.sdf
+C:\Vault\Bargedata.com\DataLogerModel\bin\Debug\DataLogger.dll.config
+C:\Vault\Bargedata.com\DataLogerModel\bin\Debug\DataLogger.dll
+C:\Vault\Bargedata.com\DataLogerModel\bin\Debug\DataLogger.pdb
+C:\Vault\Bargedata.com\DataLogerModel\obj\Debug\DataLogger.dll
+C:\Vault\Bargedata.com\DataLogerModel\obj\Debug\DataLogger.pdb

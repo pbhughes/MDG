@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="253FBF97-9382-43C7-80F7-171FA0380800" ModuleId="BargeModel" />
+  <Module PersistentId="05441736-C9C2-40FE-B15B-F93405652799" ModuleId="Main" />
+  <Module PersistentId="260EEE51-46CD-4FD3-9C97-26492C03EC78" ModuleId="AttitudeIndicator" />
+  <Module PersistentId="65FAE5EA-78A4-4AD5-8800-C325210EA09D" ModuleId="DataLogerModel" />
+  <Module PersistentId="7A015683-FD60-4574-A3FD-C27B8DB8A0CA" ModuleId="BargeModelCalculations" />
+</Modules>

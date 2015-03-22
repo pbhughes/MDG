@@ -1,0 +1,14 @@
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\bin\Release\DraftPicker.dll
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\bin\Release\DraftPicker.pdb
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\Views\KeyPad.baml
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\Views\DraftView.g.cs
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\Views\KeyPad.g.cs
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\DraftPicker_MarkupCompile.cache
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\DraftPicker_MarkupCompile.lref
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\Views\DraftView.baml
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\DraftPicker.g.resources
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\DraftPicker.Properties.Resources.resources
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\DraftPicker.csproj.GenerateResource.Cache
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\DraftPicker.dll
+C:\Vault\Bargedata.com\DraftPicker\DraftPicker\obj\Release\DraftPicker.pdb

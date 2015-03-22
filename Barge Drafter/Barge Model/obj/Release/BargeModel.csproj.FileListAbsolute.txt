@@ -1,0 +1,13 @@
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\DataLog.sdf
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\MDG.BargeModel.dll.config
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\MDG.BargeModel.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\BargeModelCalculations.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\DataLogger.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\WSMBS.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\DataLogger.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\BargeModelCalculations.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Release\WSMBS.xml
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\obj\Release\BargeModel.csprojResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\obj\Release\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\Barge Drafter\Barge Model\obj\Release\MDG.BargeModel.pdb

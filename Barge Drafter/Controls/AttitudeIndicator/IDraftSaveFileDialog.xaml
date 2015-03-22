@@ -1,0 +1,39 @@
+﻿<Window x:Class="MDG.Visuals.IDraftSaveFileDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IDraftSaveFileDialog" Height="650" Width="425">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Width" Value="71" />
+            <Setter Property="Height" Value="30" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+            <Border BorderThickness="1">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label>Barge ID:</Label>
+                    <TextBox x:Name="txtBargeID" MinWidth="250" CharacterCasing="Upper"
+                             KeyDown="txtBargeID_KeyDown" ToolTip="Hit Enter to record the Barge ID in the Draft Ticket" ></TextBox>
+                </StackPanel>
+            </Border>
+            
+            <ScrollViewer >
+                <TextBlock VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="txtPrintData"></TextBlock>
+            </ScrollViewer>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right">
+            <Button Click="Save_Click">Save</Button>
+            <Button Click="Print_Button_Click">Print</Button>
+            <Button IsCancel="True">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</Window>

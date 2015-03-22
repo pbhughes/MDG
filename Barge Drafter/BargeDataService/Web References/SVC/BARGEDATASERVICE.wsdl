@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="DraftLevel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bargeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reading" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DraftLevelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DraftLevelResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBargeData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bargeID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBargeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBargeDataResult" type="tns:BargeStructure" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BargeStructure">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Length" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Width" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Height" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LightDraft" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecordReading">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bargeID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="scaleReading" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="instrumentReading" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="draftReading" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordReadingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecordReadingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DraftLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:DraftLevel" />
+  </wsdl:message>
+  <wsdl:message name="DraftLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:DraftLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBargeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBargeData" />
+  </wsdl:message>
+  <wsdl:message name="GetBargeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBargeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecordReadingSoapIn">
+    <wsdl:part name="parameters" element="tns:RecordReading" />
+  </wsdl:message>
+  <wsdl:message name="RecordReadingSoapOut">
+    <wsdl:part name="parameters" element="tns:RecordReadingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BargeDataServiceSoap">
+    <wsdl:operation name="DraftLevel">
+      <wsdl:input message="tns:DraftLevelSoapIn" />
+      <wsdl:output message="tns:DraftLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBargeData">
+      <wsdl:input message="tns:GetBargeDataSoapIn" />
+      <wsdl:output message="tns:GetBargeDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordReading">
+      <wsdl:input message="tns:RecordReadingSoapIn" />
+      <wsdl:output message="tns:RecordReadingSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BargeDataServiceSoap" type="tns:BargeDataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DraftLevel">
+      <soap:operation soapAction="http://tempuri.org/DraftLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBargeData">
+      <soap:operation soapAction="http://tempuri.org/GetBargeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordReading">
+      <soap:operation soapAction="http://tempuri.org/RecordReading" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BargeDataServiceSoap12" type="tns:BargeDataServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DraftLevel">
+      <soap12:operation soapAction="http://tempuri.org/DraftLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBargeData">
+      <soap12:operation soapAction="http://tempuri.org/GetBargeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordReading">
+      <soap12:operation soapAction="http://tempuri.org/RecordReading" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BargeDataService">
+    <wsdl:port name="BargeDataServiceSoap" binding="tns:BargeDataServiceSoap">
+      <soap:address location="http://bargedata.com/DATASERVICE/BARGEDATASERVICE.ASMX" />
+    </wsdl:port>
+    <wsdl:port name="BargeDataServiceSoap12" binding="tns:BargeDataServiceSoap12">
+      <soap12:address location="http://bargedata.com/DATASERVICE/BARGEDATASERVICE.ASMX" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

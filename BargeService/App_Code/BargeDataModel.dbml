@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BargeData" Class="BargeDataModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mwfogvdb01.opengovideo.com;Initial Catalog=BargeData;Persist Security Info=True;User ID=barkley" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BargeDataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Companies" Member="Companies">
+    <Type Name="Company">
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BuilderName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Company_Equipment" Member="Equipments" ThisKey="CompanyID" OtherKey="CompanyID" Type="Equipment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DraftLevel" Member="DraftLevels">
+    <Type Name="DraftLevel">
+      <Column Name="ID" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DraftLevel" Member="DraftLevel1" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tonnage" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Equipment_DraftLevel" Member="Equipment" ThisKey="ID" OtherKey="ID" Type="Equipment" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Equipment" Member="Equipments">
+    <Type Name="Equipment">
+      <Column Name="ID" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Length" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Width" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Height" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LightDraft" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Equipment_DraftLevel" Member="DraftLevels" ThisKey="ID" OtherKey="ID" Type="DraftLevel" />
+      <Association Name="Company_Equipment" Member="Company" ThisKey="CompanyID" OtherKey="CompanyID" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestReadings" Member="TestReadings">
+    <Type Name="TestReading">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BargeID" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="DateTaken" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ScaleReading" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InstrumentReading" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DraftReading" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

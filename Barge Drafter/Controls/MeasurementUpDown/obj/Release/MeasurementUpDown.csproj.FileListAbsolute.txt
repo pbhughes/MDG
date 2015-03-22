@@ -1,0 +1,2 @@
+C:\Vault\Bargedata.com\Barge Drafter\Controls\MeasurementUpDown\obj\Release\ResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Barge Drafter\Controls\MeasurementUpDown\obj\Release\MDG.Controls.MeasurementUpDown_MarkupCompile.cache

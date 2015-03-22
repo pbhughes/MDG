@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="683ce034-506d-4321-8fac-66ac92442d2d" name="barkley.hughes@DEV1 2013-02-27 13:04:01" runUser="DEV1\barkley.hughes" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="12bc2aea-efff-4937-a7b2-9dfd01946a5e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="barkley.hughes_DEV1 2013-02-27 13_04_01">
+      <DeploymentItem filename="C:\Vault\Bargedata.com\Barge Drafter\Barge Model\bin\Debug\MDG.BargeModel.dll" />
+      <DeploymentItem filename="C:\Users\barkley.hughes\Documents\MODBUS\Software Master RTU  ASCII\Assemply\WSMBS.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-02-27T13:04:01.0244036-06:00" queuing="2013-02-27T13:04:05.0326329-06:00" start="2013-02-27T13:04:05.2456450-06:00" finish="2013-02-27T13:04:08.5128319-06:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="9" executed="9" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="7" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DEV1" outcome="Warning" timestamp="2013-02-27T13:04:01.9534567-06:00">
+        <Text>Deployment is currently disabled. The deployment item 'MDG.BargeModel.dll' on test 'BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest' was not deployed.</Text>
+      </RunInfo>
+      <RunInfo computerName="DEV1" outcome="Error" timestamp="2013-02-27T13:04:08.5108318-06:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GenerateXMLFunctionTest" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="9d097937-a061-23b6-6cb4-ad2fd1268cf1">
+      <DeploymentItems>
+        <DeploymentItem filename="MDG.BargeModel.dll" />
+      </DeploymentItems>
+      <Execution id="07172003-b46a-4797-99fc-bf64ef62f877" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.DataManagerTests, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateXMLFunctionTest" />
+    </UnitTest>
+    <UnitTest name="GenerateXMLFunctionTest5" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="827c51d9-0280-5dd0-e8d6-7ae1b48c6a7c">
+      <Execution id="1b9d5490-8438-4d79-a189-2144d83bcb30" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.DataManagerTests, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateXMLFunctionTest5" />
+    </UnitTest>
+    <UnitTest name="GenerateXMLFunctionTest4" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="bedd9351-6450-07b9-6ead-50c89f9b7591">
+      <DeploymentItems>
+        <DeploymentItem filename="MDG.BargeModel.dll" />
+      </DeploymentItems>
+      <Execution id="c2eeed8f-52a1-4e35-9bd7-02d69c3aeafa" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.DataManagerTests, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateXMLFunctionTest4" />
+    </UnitTest>
+    <UnitTest name="GenerateXMLFunctionTest2" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="b6e7358d-0b6a-d7a4-05b4-a81f9d1cdbd5">
+      <Execution id="82f551c8-6cfd-44e6-8d0d-d8fc02efaeca" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.DataManagerTests, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateXMLFunctionTest2" />
+    </UnitTest>
+    <UnitTest name="GenerateXMLFunctionTest1" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="22f29ce1-ed44-4fa3-ef18-64be37c9f2c5">
+      <Execution id="9da77942-03c5-4962-95a2-bb32fbc169e3" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.DataManagerTests, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateXMLFunctionTest1" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="2f322d87-6fe4-92c6-443c-3abbe977593e">
+      <Execution id="c9e11fa7-ddb0-4bb2-8ba7-efdab8c3e5e9" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.UnitTest1, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="GenerateXMLFunctionTest6" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="97fd0483-f9d6-c7ca-7844-c18c35878c08">
+      <Execution id="4f542d0f-ebb0-43ab-b919-0c3681aa2252" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.DataManagerTests, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateXMLFunctionTest6" />
+    </UnitTest>
+    <UnitTest name="GenerateXMLFunctionTest7" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="e80d4ac0-be36-609b-f92c-a0b105c0c4eb">
+      <Execution id="c85d0804-8c88-4c0b-b219-e6211c83b4f1" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.DataManagerTests, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateXMLFunctionTest7" />
+    </UnitTest>
+    <UnitTest name="GenerateXMLFunctionTest3" storage="c:\vault\bargedata.com\barge drafter\bargedraftertests\bin\debug\bargedraftertests.dll" id="4d1ea98e-d754-a11a-e67b-4b31122ab172">
+      <DeploymentItems>
+        <DeploymentItem filename="MDG.BargeModel.dll" />
+      </DeploymentItems>
+      <Execution id="bcc3c96a-a9d2-4ef9-887a-9d2213af4a61" />
+      <TestMethod codeBase="C:/Vault/Bargedata.com/Barge Drafter/BargeDrafterTests/bin/Debug/BargeDrafterTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BargeDrafterTests.DataManagerTests, BargeDrafterTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateXMLFunctionTest3" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="22f29ce1-ed44-4fa3-ef18-64be37c9f2c5" executionId="9da77942-03c5-4962-95a2-bb32fbc169e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f322d87-6fe4-92c6-443c-3abbe977593e" executionId="c9e11fa7-ddb0-4bb2-8ba7-efdab8c3e5e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d1ea98e-d754-a11a-e67b-4b31122ab172" executionId="bcc3c96a-a9d2-4ef9-887a-9d2213af4a61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="827c51d9-0280-5dd0-e8d6-7ae1b48c6a7c" executionId="1b9d5490-8438-4d79-a189-2144d83bcb30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97fd0483-f9d6-c7ca-7844-c18c35878c08" executionId="4f542d0f-ebb0-43ab-b919-0c3681aa2252" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d097937-a061-23b6-6cb4-ad2fd1268cf1" executionId="07172003-b46a-4797-99fc-bf64ef62f877" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6e7358d-0b6a-d7a4-05b4-a81f9d1cdbd5" executionId="82f551c8-6cfd-44e6-8d0d-d8fc02efaeca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bedd9351-6450-07b9-6ead-50c89f9b7591" executionId="c2eeed8f-52a1-4e35-9bd7-02d69c3aeafa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e80d4ac0-be36-609b-f92c-a0b105c0c4eb" executionId="c85d0804-8c88-4c0b-b219-e6211c83b4f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9da77942-03c5-4962-95a2-bb32fbc169e3" testId="22f29ce1-ed44-4fa3-ef18-64be37c9f2c5" testName="GenerateXMLFunctionTest1" computerName="DEV1" duration="00:00:00.1754506" startTime="2013-02-27T13:04:05.5546627-06:00" endTime="2013-02-27T13:04:07.7507883-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9da77942-03c5-4962-95a2-bb32fbc169e3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest1() in C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\DataManagerTests.cs:line 91
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c9e11fa7-ddb0-4bb2-8ba7-efdab8c3e5e9" testId="2f322d87-6fe4-92c6-443c-3abbe977593e" testName="TestMethod1" computerName="DEV1" duration="00:00:00.0003031" startTime="2013-02-27T13:04:07.7667892-06:00" endTime="2013-02-27T13:04:07.7757898-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9e11fa7-ddb0-4bb2-8ba7-efdab8c3e5e9">
+    </UnitTestResult>
+    <UnitTestResult executionId="bcc3c96a-a9d2-4ef9-887a-9d2213af4a61" testId="4d1ea98e-d754-a11a-e67b-4b31122ab172" testName="GenerateXMLFunctionTest3" computerName="DEV1" duration="00:00:00.0516897" startTime="2013-02-27T13:04:07.7847903-06:00" endTime="2013-02-27T13:04:07.8747954-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcc3c96a-a9d2-4ef9-887a-9d2213af4a61">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest3() in C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\DataManagerTests.cs:line 120
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1b9d5490-8438-4d79-a189-2144d83bcb30" testId="827c51d9-0280-5dd0-e8d6-7ae1b48c6a7c" testName="GenerateXMLFunctionTest5" computerName="DEV1" duration="00:00:00.0317035" startTime="2013-02-27T13:04:07.8837959-06:00" endTime="2013-02-27T13:04:07.9227982-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b9d5490-8438-4d79-a189-2144d83bcb30">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest5() in C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\DataManagerTests.cs:line 147
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4f542d0f-ebb0-43ab-b919-0c3681aa2252" testId="97fd0483-f9d6-c7ca-7844-c18c35878c08" testName="GenerateXMLFunctionTest6" computerName="DEV1" duration="00:00:00.1000195" startTime="2013-02-27T13:04:07.9307986-06:00" endTime="2013-02-27T13:04:08.0398049-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f542d0f-ebb0-43ab-b919-0c3681aa2252">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest6() in C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\DataManagerTests.cs:line 158
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="07172003-b46a-4797-99fc-bf64ef62f877" testId="9d097937-a061-23b6-6cb4-ad2fd1268cf1" testName="GenerateXMLFunctionTest" computerName="DEV1" duration="00:00:00.0349644" startTime="2013-02-27T13:04:08.0508055-06:00" endTime="2013-02-27T13:04:08.0938079-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07172003-b46a-4797-99fc-bf64ef62f877">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest() in C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\DataManagerTests.cs:line 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="82f551c8-6cfd-44e6-8d0d-d8fc02efaeca" testId="b6e7358d-0b6a-d7a4-05b4-a81f9d1cdbd5" testName="GenerateXMLFunctionTest2" computerName="DEV1" duration="00:00:00.0345282" startTime="2013-02-27T13:04:08.1008083-06:00" endTime="2013-02-27T13:04:08.1418107-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82f551c8-6cfd-44e6-8d0d-d8fc02efaeca">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest2() in C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\DataManagerTests.cs:line 103
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c2eeed8f-52a1-4e35-9bd7-02d69c3aeafa" testId="bedd9351-6450-07b9-6ead-50c89f9b7591" testName="GenerateXMLFunctionTest4" computerName="DEV1" duration="00:00:00.0503550" startTime="2013-02-27T13:04:08.1498111-06:00" endTime="2013-02-27T13:04:08.2088145-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2eeed8f-52a1-4e35-9bd7-02d69c3aeafa">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;-13&gt;. </Message>
+          <StackTrace>   at BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest4() in C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\DataManagerTests.cs:line 135
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c85d0804-8c88-4c0b-b219-e6211c83b4f1" testId="e80d4ac0-be36-609b-f92c-a0b105c0c4eb" testName="GenerateXMLFunctionTest7" computerName="DEV1" duration="00:00:00.0341876" startTime="2013-02-27T13:04:08.2168150-06:00" endTime="2013-02-27T13:04:08.2598174-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c85d0804-8c88-4c0b-b219-e6211c83b4f1">
+      <Output>
+        <DebugTrace>Tare taken
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at BargeDrafterTests.DataManagerTests.GenerateXMLFunctionTest7() in C:\Vault\Bargedata.com\Barge Drafter\BargeDrafterTests\DataManagerTests.cs:line 169
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

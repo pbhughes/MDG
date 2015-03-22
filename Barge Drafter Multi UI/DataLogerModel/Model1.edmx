@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DataLogModel1.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DataLogModel1StoreContainer">
+          <EntitySet Name="DataLog" EntityType="DataLogModel1.Store.DataLog" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="DataLog">
+          <Key>
+            <PropertyRef Name="ReadingDate" />
+            <PropertyRef Name="DayNumber" />
+          </Key>
+          <Property Name="ReadingDate" Type="datetime" Nullable="false" />
+          <Property Name="SternAngle" Type="float" Nullable="false" />
+          <Property Name="SternWaterSideDraft" Type="float" Nullable="false" />
+          <Property Name="SternDockSideDraft" Type="float" Nullable="false" />
+          <Property Name="BowAngle" Type="float" Nullable="false" />
+          <Property Name="BowWaterSideDraft" Type="float" Nullable="false" />
+          <Property Name="BowDockSideDraft" Type="float" Nullable="false" />
+          <Property Name="LightDraft" Type="nvarchar" MaxLength="10" />
+          <Property Name="HeavyDraft" Type="nvarchar" MaxLength="10" />
+          <Property Name="DayNumber" Type="int" Nullable="false" />
+          <Property Name="Depth1" Type="float" />
+          <Property Name="Depth2" Type="float" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DataLogModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DataLogEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DataLogs" EntityType="DataLogModel1.DataLog" />
+        </EntityContainer>
+        <EntityType Name="DataLog">
+          <Key>
+            <PropertyRef Name="ReadingDate" />
+            <PropertyRef Name="DayNumber" />
+          </Key>
+          <Property Type="DateTime" Name="ReadingDate" Nullable="false" />
+          <Property Type="Double" Name="SternAngle" Nullable="false" />
+          <Property Type="Double" Name="SternWaterSideDraft" Nullable="false" />
+          <Property Type="Double" Name="SternDockSideDraft" Nullable="false" />
+          <Property Type="Double" Name="BowAngle" Nullable="false" />
+          <Property Type="Double" Name="BowWaterSideDraft" Nullable="false" />
+          <Property Type="Double" Name="BowDockSideDraft" Nullable="false" />
+          <Property Type="String" Name="LightDraft" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HeavyDraft" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="DayNumber" Nullable="false" />
+          <Property Type="Double" Name="Depth1" />
+          <Property Type="Double" Name="Depth2" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DataLogModel1StoreContainer" CdmEntityContainer="DataLogEntities1">
+          <EntitySetMapping Name="DataLogs">
+            <EntityTypeMapping TypeName="DataLogModel1.DataLog">
+              <MappingFragment StoreEntitySet="DataLog">
+                <ScalarProperty Name="Depth2" ColumnName="Depth2" />
+                <ScalarProperty Name="Depth1" ColumnName="Depth1" />
+                <ScalarProperty Name="DayNumber" ColumnName="DayNumber" />
+                <ScalarProperty Name="HeavyDraft" ColumnName="HeavyDraft" />
+                <ScalarProperty Name="LightDraft" ColumnName="LightDraft" />
+                <ScalarProperty Name="BowDockSideDraft" ColumnName="BowDockSideDraft" />
+                <ScalarProperty Name="BowWaterSideDraft" ColumnName="BowWaterSideDraft" />
+                <ScalarProperty Name="BowAngle" ColumnName="BowAngle" />
+                <ScalarProperty Name="SternDockSideDraft" ColumnName="SternDockSideDraft" />
+                <ScalarProperty Name="SternWaterSideDraft" ColumnName="SternWaterSideDraft" />
+                <ScalarProperty Name="SternAngle" ColumnName="SternAngle" />
+                <ScalarProperty Name="ReadingDate" ColumnName="ReadingDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="DataLogModel1.DataLog" Width="1.5" PointX="1" PointY="0.5" Height="2.9417936197916656" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

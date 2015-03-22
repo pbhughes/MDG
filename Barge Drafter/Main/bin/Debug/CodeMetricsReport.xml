@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="10.0">
+  <Targets>
+    <Target Name="C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MDG.Main.exe">
+      <Modules>
+        <Module Name="MDG.Main.exe" AssemblyVersion="1.0.0.0" FileVersion="1.0.0.0">
+          <Metrics>
+            <Metric Name="MaintainabilityIndex" Value="91" />
+            <Metric Name="CyclomaticComplexity" Value="8" />
+            <Metric Name="ClassCoupling" Value="13" />
+            <Metric Name="DepthOfInheritance" Value="9" />
+            <Metric Name="LinesOfCode" Value="12" />
+          </Metrics>
+          <Namespaces>
+            <Namespace Name="MDG.Main">
+              <Metrics>
+                <Metric Name="MaintainabilityIndex" Value="91" />
+                <Metric Name="CyclomaticComplexity" Value="8" />
+                <Metric Name="ClassCoupling" Value="13" />
+                <Metric Name="DepthOfInheritance" Value="9" />
+                <Metric Name="LinesOfCode" Value="12" />
+              </Metrics>
+              <Types>
+                <Type Name="App">
+                  <Metrics>
+                    <Metric Name="MaintainabilityIndex" Value="82" />
+                    <Metric Name="CyclomaticComplexity" Value="6" />
+                    <Metric Name="ClassCoupling" Value="10" />
+                    <Metric Name="DepthOfInheritance" Value="3" />
+                    <Metric Name="LinesOfCode" Value="10" />
+                  </Metrics>
+                  <Members>
+                    <Member Name="OnStartup(StartupEventArgs) : void" File="C:\Vault\Bargedata.com\Barge Drafter\Main\App.xaml.cs" Line="12">
+                      <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="78" />
+                        <Metric Name="CyclomaticComplexity" Value="1" />
+                        <Metric Name="ClassCoupling" Value="8" />
+                        <Metric Name="LinesOfCode" Value="3" />
+                      </Metrics>
+                    </Member>
+                    <Member Name="TextBox_GotFocus(object, RoutedEventArgs) : void" File="C:\Vault\Bargedata.com\Barge Drafter\Main\App.xaml.cs" Line="19">
+                      <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="83" />
+                        <Metric Name="CyclomaticComplexity" Value="2" />
+                        <Metric Name="ClassCoupling" Value="3" />
+                        <Metric Name="LinesOfCode" Value="2" />
+                      </Metrics>
+                    </Member>
+                    <Member Name="TextBox_SelectivelyIgnoreMouseButton(object, RoutedEventArgs) : void" File="C:\Vault\Bargedata.com\Barge Drafter\Main\App.xaml.cs" Line="25">
+                      <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="74" />
+                        <Metric Name="CyclomaticComplexity" Value="2" />
+                        <Metric Name="ClassCoupling" Value="3" />
+                        <Metric Name="LinesOfCode" Value="4" />
+                      </Metrics>
+                    </Member>
+                    <Member Name="App()">
+                      <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="100" />
+                        <Metric Name="CyclomaticComplexity" Value="1" />
+                        <Metric Name="ClassCoupling" Value="1" />
+                        <Metric Name="LinesOfCode" Value="1" />
+                      </Metrics>
+                    </Member>
+                  </Members>
+                </Type>
+                <Type Name="MainWindow">
+                  <Metrics>
+                    <Metric Name="MaintainabilityIndex" Value="100" />
+                    <Metric Name="CyclomaticComplexity" Value="2" />
+                    <Metric Name="ClassCoupling" Value="4" />
+                    <Metric Name="DepthOfInheritance" Value="9" />
+                    <Metric Name="LinesOfCode" Value="2" />
+                  </Metrics>
+                  <Members>
+                    <Member Name="MainWindow()" File="C:\Vault\Bargedata.com\Barge Drafter\Main\MainWindow.xaml.cs" Line="10">
+                      <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="91" />
+                        <Metric Name="CyclomaticComplexity" Value="1" />
+                        <Metric Name="ClassCoupling" Value="1" />
+                        <Metric Name="LinesOfCode" Value="2" />
+                      </Metrics>
+                    </Member>
+                    <Member Name="Window_Loaded(object, RoutedEventArgs) : void" File="C:\Vault\Bargedata.com\Barge Drafter\Main\MainWindow.xaml.cs" Line="17">
+                      <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="100" />
+                        <Metric Name="CyclomaticComplexity" Value="1" />
+                        <Metric Name="ClassCoupling" Value="1" />
+                        <Metric Name="LinesOfCode" Value="0" />
+                      </Metrics>
+                    </Member>
+                  </Members>
+                </Type>
+              </Types>
+            </Namespace>
+          </Namespaces>
+        </Module>
+      </Modules>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

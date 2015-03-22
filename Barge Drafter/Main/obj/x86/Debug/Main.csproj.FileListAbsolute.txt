@@ -1,0 +1,49 @@
+C:\Vault\Bargedata.com\Main\bin\Debug\MDG.Main.exe
+C:\Vault\Bargedata.com\Main\bin\Debug\MDG.Main.pdb
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\MainWindow.baml
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\MainWindow.g.cs
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\App.g.cs
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\MDG.Main_MarkupCompile.cache
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\MDG.Main.g.resources
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\MDG.Main.Properties.Resources.resources
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\MDG.Main.exe
+C:\Vault\Bargedata.com\Main\obj\x86\Debug\MDG.Main.pdb
+C:\Vault\Bargedata.com\Main\bin\Debug\MDG.Visuals.dll
+C:\Vault\Bargedata.com\Main\bin\Debug\MDG.Visuals.pdb
+C:\Vault\Bargedata.com\Main\bin\Debug\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\Main\bin\Debug\MDG.BargeModel.pdb
+C:\Vault\Bargedata.com\Main\bin\Debug\MDG.Main.exe.config
+C:\Vault\Bargedata.com\Main\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MDG.Main.exe.config
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\MDG.Main.exe
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\MDG.Main.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\App.g.cs
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\MDG.Main_MarkupCompile.cache
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MDG.Main.exe
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MDG.Main.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MDG.BargeModel.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MDG.Visuals.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MDG.BargeModel.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MDG.Visuals.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\MainWindow.baml
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\MainWindow.g.cs
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\MDG.Main.g.resources
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\MDG.Main.Properties.Resources.resources
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\WSMBS.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\WSMBS.xml
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\MahApps.Metro.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\Microsoft.Windows.Shell.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\System.Windows.Interactivity.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\Microsoft.Windows.Shell.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\App.baml
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\DataLogger.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\BargeModelCalculations.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\DataLogger.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\BargeModelCalculations.pdb
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\Main.csprojResolveAssemblyReference.cache
+C:\Vault\Bargedata.com\Barge Drafter\Main\obj\x86\Debug\Main.csproj.GenerateResource.Cache
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\DraftPicker.dll
+C:\Vault\Bargedata.com\Barge Drafter\Main\bin\Debug\DraftPicker.pdb

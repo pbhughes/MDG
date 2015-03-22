@@ -1,0 +1,68 @@
+﻿
+
+using System;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+
+namespace MDG.Visuals
+{
+    /// <summary>
+    /// Interaction logic for TelemetryMeter.xaml
+    /// </summary>
+    public partial class TelemetryMeter
+    {
+        public TelemetryMeter()
+        {
+            InitializeComponent();
+          
+            RegisterForNotification("DeckPlate",this.blackBox, BlackBoxCallBack);
+            RegisterForNotification("DeckPlate", this.yellowBox, YellowBoxCallBack);
+        }
+
+        private void YellowBoxCallBack(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            double value = (double) e.NewValue;
+            yellowBox.DeckPlate = value;
+        }
+
+        private void BlackBoxCallBack(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            double value = (double) e.NewValue;
+            blackBox.DeckPlate = value;
+        }
+
+      
+
+        private void CheckBox_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            txtBowRefFeet.Text = "0";
+            txtBowRefInches.Text = "0";
+            txtSternRefFeet.Text = "0";
+            txtSternRefInches.Text = "0";
+        }
+
+        public void RegisterForNotification ( string propertyName, FrameworkElement element,
+                                            PropertyChangedCallback callback )
+        {
+
+            //Bind to a dependency property
+            Binding b = new Binding ( propertyName ) { Source = element };
+            var prop = System.Windows.DependencyProperty.RegisterAttached (
+                "ListenAttached"  + propertyName,
+                typeof ( object ),
+                typeof ( PrimaryDraftMeasurmentBox ),
+                new System.Windows.PropertyMetadata ( callback ) );
+
+            element.SetBinding ( prop, b );
+        }
+
+
+
+    }
+}
