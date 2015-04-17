@@ -1172,8 +1172,11 @@ namespace MDG.Model
 
         private void _bw_DoWork(object sender, DoWorkEventArgs e)
         {
+            var start = DateTime.Now;
+
             try
             {
+                
                 AveragingStack<ushort> node1DepthAvg = new AveragingStack<ushort>();
                 AveragingStack<ushort> node2DepthAvg = new AveragingStack<ushort>();
 
@@ -1187,12 +1190,12 @@ namespace MDG.Model
                 InStartupMode = true;
                 ReadInProgress = true;
 
-                for (int i = 0; i <= LoopCount; i++)
+                for (int i = 1; i <= LoopCount; i++)
                 {
                     if (_bw.IsBusy && _bw.CancellationPending)
                         break;
 
-                     ReportStatus ( String.Format("Drafting....read number: {0}",i));
+                     
 
                      _bw.ReportProgress(i);
 
@@ -1236,11 +1239,21 @@ namespace MDG.Model
                 ProcessReadings ( readings );
 
                 ReadInProgress = false;
+                TimeSpan dur = new TimeSpan(DateTime.Now.Ticks - start.Ticks);
+                int intDur = (int)dur.TotalSeconds;
+                ReportStatus(
+                    String.Format("Reading Every: {0} {1}",
+                    (intDur.ToString()),
+                    (intDur == 1) ? "Second" : "Seconds"));
             }
             catch (Exception ex)
             {
                 ReadInProgress = false;
                 throw ex;
+            }
+            finally
+            {
+                
             }
 
         }
