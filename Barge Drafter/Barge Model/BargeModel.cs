@@ -635,6 +635,19 @@ namespace MDG.Model
           
         }
 
+        private void SaveComPortSetting(string comPort)
+        {
+            XDocument xdoc;
+            if (File.Exists(SETTINGS_FILE_NAME))
+            {
+                //reading scale settings from the file
+                xdoc = XDocument.Load(SETTINGS_FILE_NAME);
+                xdoc.Element("Scales").Element("comport").Value = comPort;
+                
+                xdoc.Save(SETTINGS_FILE_NAME, SaveOptions.OmitDuplicateNamespaces);
+            }
+        }
+
         private void ReadSettings ( )
         {
             XDocument xdoc;
@@ -1119,16 +1132,9 @@ namespace MDG.Model
             {
                 string msg =
                     String.Format ( "{0} \n1) Try cycling the power on the instruments. \n2) Restart the application.", error );
-                //Application.Current.Dispatcher.Invoke (
-                //    new Action ( ( ) => MessageBox.Show ( Application.Current.MainWindow, msg,
-                //                                     "I Draft Error", MessageBoxButton.OK,
-                //                                     MessageBoxImage.None, MessageBoxResult.OK,
-                //                                     MessageBoxOptions.None ) ) );
             }
 
         }
-
-       
 
         public void AddDeckPlateOption(double value)
         {
@@ -1375,6 +1381,7 @@ namespace MDG.Model
                         ModbusError = "Communication port connected...";
                         ModBusIsConnected = true;
                         InStartupMode = true;
+                        SaveComPortSetting(portName);
                         //_bw.RunWorkerAsync();
                         return;
                     }

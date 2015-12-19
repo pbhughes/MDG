@@ -1,5 +1,5 @@
 ﻿<Scales>
-  <comport>com3</comport>
+  <comport></comport>
   <registerSize>48</registerSize>
   <readInterval>1</readInterval>
   <freeboardOffset>11.25</freeboardOffset>
