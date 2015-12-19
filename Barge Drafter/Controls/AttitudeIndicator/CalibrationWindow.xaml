@@ -38,7 +38,8 @@
                 DeckPlate="{Binding DeckPlate}"
                 Width="Auto" />
         </StackPanel>
-        <picker:DraftView x:Name="actualDraft" Grid.Row="1" Grid.ColumnSpan="2"  />
+        <picker:DraftView x:Name="actualDraft" Grid.Row="1" 
+                          Grid.ColumnSpan="2" BargeDepth="{Binding BargeDepth}" />
         <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" 
                     Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
             <Button IsDefault="True" Click="OK_Button_Click">OK</Button>

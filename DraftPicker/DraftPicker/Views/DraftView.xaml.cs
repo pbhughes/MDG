@@ -19,8 +19,8 @@ namespace DraftPicker.Views
 
         #region Properties and Fields
 
-        private int _freeBoard;
-        public int FreeBoard
+        private double _freeBoard;
+        public double FreeBoard
         {
             get
             {
@@ -30,8 +30,9 @@ namespace DraftPicker.Views
             set
             {
                 _freeBoard = value;
-                Feet = MeasurementConversions.GetFeet(value);
-                Inches = MeasurementConversions.GetIches(value);
+                double draft = (BargeDepth * 12) - value;
+                Feet = MeasurementConversions.GetFeet(draft);
+                Inches = MeasurementConversions.GetIches(draft);
                 OnPropertyChanged("FreeBoard");
             }
         }
@@ -45,7 +46,9 @@ namespace DraftPicker.Views
             {
                 _feet = value;
                 SetValue(ValueProperty, (_feet*12) + _inches);
+                _freeBoard = (BargeDepth * 12) - (_feet * 12 + _inches);
                 OnPropertyChanged("Feet");
+                OnPropertyChanged("FreeBoard");
             }
         }
 
@@ -58,7 +61,9 @@ namespace DraftPicker.Views
             {
                 _inches = value;
                 SetValue(ValueProperty, (_feet * 12) + _inches);
+                _freeBoard = (BargeDepth * 12) - (_feet * 12 + _inches);
                 OnPropertyChanged("Inches");
+                OnPropertyChanged("FreeBoard");
             }
         }
 
@@ -92,9 +97,16 @@ namespace DraftPicker.Views
             set { SetValue(ValueProperty, value); }
         }
 
-        
 
+        public double BargeDepth
+        {
+            get { return (double)GetValue(BargeDepthProperty); }
+            set { SetValue(BargeDepthProperty, value); }
+        }
 
+        // Using a DependencyProperty as the backing store for BargeDepth.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty BargeDepthProperty =
+            DependencyProperty.Register("BargeDepth", typeof(double), typeof(DraftView), new PropertyMetadata(0.0));
 
         #endregion
 
@@ -125,7 +137,6 @@ namespace DraftPicker.Views
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             txtFreeBoardInput.Focus();
-           
         }
     }
 }

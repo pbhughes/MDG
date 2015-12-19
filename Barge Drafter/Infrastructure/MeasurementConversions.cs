@@ -23,17 +23,17 @@ namespace MDG.Infrastructure.Conversions
             return string.Format("{0}' {1}\"", feet, inches.ToString("N2"));
         }
 
-        public static int GetFeet(int inches)
+        public static int GetFeet(double inches)
         {
-            int feet = (int)(inches / 12);
-            return feet;
+            double feet = (inches / 12);
+            return (int)feet;
         }
 
-        public static int GetIches(int inches)
+        public static int GetIches(double inches)
         {
-            int feet = (int)(inches / 12);
-            int remaining = inches - (feet * 12);
-            return remaining;
+            double feet = (int)(inches / 12);
+            double remaining = inches - (feet * 12);
+            return (int)remaining;
         }
     }
 

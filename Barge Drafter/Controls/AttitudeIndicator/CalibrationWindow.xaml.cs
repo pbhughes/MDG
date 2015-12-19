@@ -30,6 +30,7 @@ namespace MDG.Visuals
             layoutRoot.DataContext = this;
             calculatedDraft.freeboardPanel.Visibility = Visibility.Collapsed;
             BargeDepth = bargeDepth;
+            
             CurrentFreeboard = currentFreeBoard;
             BargeWidth = bargeWidth;
             calculatedDraft.cboDeckPlate.ItemsSource = deckPlateOptions;
