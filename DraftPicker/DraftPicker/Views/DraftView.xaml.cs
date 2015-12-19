@@ -115,12 +115,17 @@ namespace DraftPicker.Views
 
 
 
+
         #endregion
 
         #region Local Events
 
         #endregion
 
-     
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtFreeBoardInput.Focus();
+           
+        }
     }
 }

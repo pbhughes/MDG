@@ -7,7 +7,7 @@
              xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d" 
              d:DesignHeight="300" 
-             d:DesignWidth="350" Padding="10" 
+             d:DesignWidth="350" Padding="10" Loaded="UserControl_Loaded"
              xmlns:my="clr-namespace:DraftPicker.Views">
     <UserControl.Resources>
         <assist:TitleAndValueConverter x:Key="converterTileAndValue" />
@@ -30,6 +30,7 @@
                                FormatString="N0" 
                               ParsingNumberStyle="Integer"
                               Value="{Binding FreeBoard}"
+                              SelectAllOnGotFocus="True"
                           AllowTextInput="True" FontSize="20" ></tk:IntegerUpDown>
         </DockPanel>
         
