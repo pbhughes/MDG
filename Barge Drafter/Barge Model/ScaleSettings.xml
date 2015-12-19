@@ -1,27 +1,27 @@
 ﻿<Scales>
-  <comport>COM5</comport>
+  <comport>com3</comport>
   <registerSize>48</registerSize>
   <readInterval>1</readInterval>
-  <freeboardOffset>12</freeboardOffset>
-  <loopCount>3</loopCount>
+  <freeboardOffset>11.25</freeboardOffset>
+  <loopCount>1</loopCount>
   <node1>
     <stateRegister>23</stateRegister>
     <depthRegister>20</depthRegister>
     <rollRegister>21</rollRegister>
     <depth>
       <raw>
-        <low>90</low>
-        <high>65485</high>
+        <low>40</low>
+        <high>65441</high>
       </raw>
       <real>
-        <low>11.75</low>
+        <low>10.5</low>
         <high>180</high>
       </real>
     </depth>
     <roll>
       <raw>
-        <low>4655</low>
-        <high>57191</high>
+        <low>19000</low>
+        <high>60311</high>
       </raw>
       <real>
         <low>-8</low>
@@ -36,17 +36,17 @@
     <depth>
       <raw>
         <low>90</low>
-        <high>65441</high>
+        <high>65485</high>
       </raw>
       <real>
-        <low>11.15</low>
+        <low>10.75</low>
         <high>180</high>
       </real>
     </depth>
     <roll>
       <raw>
-        <low>5791</low>
-        <high>58172</high>
+        <low>17622</low>
+        <high>59665</high>
       </raw>
       <real>
         <low>-8</low>
@@ -55,3 +55,4 @@
     </roll>
   </node2>
 </Scales>
+

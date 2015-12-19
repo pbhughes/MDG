@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:assist="clr-namespace:DraftPicker.Helpers"
+             xmlns:tk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d" 
              d:DesignHeight="300" 
              d:DesignWidth="350" Padding="10" 
@@ -13,7 +14,8 @@
     </UserControl.Resources>
     <Grid x:Name="layoutRoot">
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition Height="65" />
+            <RowDefinition Height="auto" />
             <RowDefinition MaxHeight="50" />
         </Grid.RowDefinitions>
         
@@ -21,17 +23,29 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <my:KeyPad Grid.Column="0" Grid.RowSpan="1" Grid.Row="0"  HorizontalAlignment="Stretch" MinValue="0" MaxValue="17"
-                   x:Name="keyPadFeet"  VerticalAlignment="Stretch" Value="{Binding Path=Feet, Mode=TwoWay}" ValueLabel="Feet"/>
-        <my:KeyPad Grid.Column="1" Grid.RowSpan="1" Grid.Row="0"  HorizontalAlignment="Stretch" MinValue="0" MaxValue="11"
-                   x:Name="keyPadInches" VerticalAlignment="Stretch" Value="{Binding Path=Inches, Mode=TwoWay}" ValueLabel="Inches"  />
+        <DockPanel LastChildFill="True" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label HorizontalAlignment="Right">Freeboard</Label>
+            <tk:IntegerUpDown Watermark="Enter freeboard..."
+                              x:Name="txtFreeBoardInput"
+                               FormatString="N0" 
+                              ParsingNumberStyle="Integer"
+                              Value="{Binding FreeBoard}"
+                          AllowTextInput="True" FontSize="20" ></tk:IntegerUpDown>
+        </DockPanel>
+        
+        <my:KeyPad Grid.Column="0" Grid.RowSpan="1" Grid.Row="1"  HorizontalAlignment="Stretch" MinValue="0" MaxValue="17"
+                   x:Name="keyPadFeet"  VerticalAlignment="Stretch"
+                   Value="{Binding Path=Feet, Mode=TwoWay}" ValueLabel="Feet"/>
+        <my:KeyPad Grid.Column="1" Grid.RowSpan="1" Grid.Row="1"  HorizontalAlignment="Stretch" MinValue="0" MaxValue="11"
+                   x:Name="keyPadInches" VerticalAlignment="Stretch" 
+                   Value="{Binding Path=Inches, Mode=TwoWay}" ValueLabel="Inches"  />
         <TextBlock VerticalAlignment="Center" FontSize="20"
                        HorizontalAlignment="Center" 
-                       Text="{Binding Title}" Grid.Row="1" Grid.Column="0" />
+                       Text="{Binding Title}" Grid.Row="2" Grid.Column="0" />
 
         <TextBlock VerticalAlignment="Center" FontSize="20"
                        HorizontalAlignment="Center" 
-                        Grid.Row="1" Grid.Column="1">
+                        Grid.Row="2" Grid.Column="1">
             <TextBlock.Text>
                 <MultiBinding StringFormat="Total Inches:  {0}">
                     <Binding Path="Value"/>

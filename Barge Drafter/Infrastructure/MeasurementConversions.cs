@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MDG.Conversions
+namespace MDG.Infrastructure.Conversions
 {
     public static class MeasurementConversions
     {
@@ -22,7 +22,21 @@ namespace MDG.Conversions
             }
             return string.Format("{0}' {1}\"", feet, inches.ToString("N2"));
         }
+
+        public static int GetFeet(int inches)
+        {
+            int feet = (int)(inches / 12);
+            return feet;
+        }
+
+        public static int GetIches(int inches)
+        {
+            int feet = (int)(inches / 12);
+            int remaining = inches - (feet * 12);
+            return remaining;
+        }
     }
+
 }
 
 

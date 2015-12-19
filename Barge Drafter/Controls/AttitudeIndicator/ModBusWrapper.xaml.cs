@@ -2,7 +2,7 @@
 using System.Text;
 using System.Windows;
 using MDG.Model;
-using MDG.Conversions;
+using MDG.Infrastructure.Conversions;
 
 
 namespace MDG.Visuals

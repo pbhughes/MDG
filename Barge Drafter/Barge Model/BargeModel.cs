@@ -9,7 +9,7 @@ using WSMBS;
 using System.IO;
 using MDG.DataLogger;
 using System.Collections.Generic;
-using MDG.Conversions;
+using MDG.Infrastructure.Conversions;
 using Parity = WSMBS.Parity;
 using Timer = System.Timers.Timer;
 

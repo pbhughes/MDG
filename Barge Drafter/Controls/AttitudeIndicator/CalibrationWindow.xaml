@@ -19,15 +19,18 @@
     </Window.Resources>
     <Grid x:Name="layoutRoot">
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="75" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="pnlCurrentDraft" Orientation="Horizontal" HorizontalAlignment="Stretch"  Grid.Row="0" Grid.ColumnSpan="2">
+        <StackPanel x:Name="pnlCurrentDraft" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Stretch" 
+                    Grid.Row="0" Grid.ColumnSpan="2">
             <draft:PrimaryDraftMeasurementBox 
                 x:Name="calculatedDraft" 
                 RawReading="{Binding CurrentFreeboard}"

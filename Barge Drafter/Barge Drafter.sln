@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftingControls", "Controls\AttitudeIndicator\DraftingControls.csproj", "{260EEE51-46CD-4FD3-9C97-26492C03EC78}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BargeModel", "Barge Model\BargeModel.csproj", "{253FBF97-9382-43C7-80F7-171FA0380800}"
@@ -20,39 +22,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftPicker", "..\DraftPicker\DraftPicker\DraftPicker.csproj", "{93891736-FED3-4EF1-ADD9-766E93D4F270}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F48C8070-239A-4509-A636-8D5533304069}"
+EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = Barge Drafter.vsmdi
-	EndGlobalSection
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 5
-		SccProjectUniqueName0 = Controls\\AttitudeIndicator\\DraftingControls.csproj
-		SccProjectName0 = $/Barge\u0020Drafter/Controls/AttitudeIndicator
-		SccLocalPath0 = Controls\\AttitudeIndicator
-		SccProvider0 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
-		CanCheckoutShared = false
-		SccProjectUniqueName1 = Barge\u0020Model\\BargeModel.csproj
-		SccProjectName1 = $/Barge\u0020Drafter/Barge\u0020Model
-		SccLocalPath1 = Barge\u0020Model
-		SccProvider1 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
-		CanCheckoutShared = false
-		SccProjectUniqueName2 = ..\\DataLogerModel\\DataLogerModel.csproj
-		SccProjectName2 = $/Bargedata.com/DataLogerModel
-		SccLocalPath2 = ..\\DataLogerModel
-		SccProvider2 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
-		CanCheckoutShared = false
-		SccProjectUniqueName3 = BargeModelCalculations\\BargeModelCalculations.csproj
-		SccProjectName3 = $/Barge\u0020Drafter
-		SccLocalPath3 = .
-		SccProvider3 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
-		CanCheckoutShared = false
-		SccProjectFilePathRelativizedFromConnection3 = BargeModelCalculations\\
-		SccProjectUniqueName4 = Main\\Main.csproj
-		SccProjectName4 = $/Barge\u0020Drafter/Main
-		SccLocalPath4 = Main
-		SccProvider4 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
-		CanCheckoutShared = false
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -122,8 +94,23 @@ Global
 		{93891736-FED3-4EF1-ADD9-766E93D4F270}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{93891736-FED3-4EF1-ADD9-766E93D4F270}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{93891736-FED3-4EF1-ADD9-766E93D4F270}.Release|x86.ActiveCfg = Release|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Debug|x86.Build.0 = Debug|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Release|x86.ActiveCfg = Release|Any CPU
+		{F48C8070-239A-4509-A636-8D5533304069}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Barge Drafter.vsmdi
 	EndGlobalSection
 EndGlobal

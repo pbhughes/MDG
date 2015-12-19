@@ -3,8 +3,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Windows;
 using MDG.Model;
-using MDG.Conversions;
-
+using MDG.Infrastructure.Conversions;
 namespace MDG.Visuals
 {
     /// <summary>
