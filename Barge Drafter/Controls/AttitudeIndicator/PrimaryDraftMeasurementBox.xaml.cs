@@ -100,7 +100,30 @@ namespace MDG.Visuals
             _deckPlate = newValue;
         }
 
-       
+
+
+
+        public Visibility ShowCalibrateControlPanel
+        {
+            get { return (Visibility)GetValue(ShowCalibrateControlPanelProperty); }
+            set { SetValue(ShowCalibrateControlPanelProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ShowCalibrateControlPanel.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ShowCalibrateControlPanelProperty =
+            DependencyProperty.Register("ShowCalibrateControlPanel", typeof(Visibility), typeof(PrimaryDraftMeasurementBox), new PropertyMetadata(Visibility.Visible, OnCalibarateControlPanelVisibilityChanged));
+
+
+
+
+        private static void OnCalibarateControlPanelVisibilityChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            Visibility visSetting = (Visibility)e.NewValue;
+            PrimaryDraftMeasurementBox control = (PrimaryDraftMeasurementBox)d;
+            control.calibrateControlPanel.Visibility = visSetting;
+        }
+
+
         #endregion
 
         #region NodeName Property

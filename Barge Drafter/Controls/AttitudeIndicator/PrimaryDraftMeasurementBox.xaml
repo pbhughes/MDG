@@ -37,8 +37,8 @@
                     <TextBlock Style="{StaticResource ResourceKey=Reading}" x:Name="txtDraft" Text="{Binding Feet,StringFormat='000'}" TextAlignment="Right" ></TextBlock>
                 </StackPanel>
                 <Separator Background="{Binding Path=Foreground, ElementName=Main}" Height="10"></Separator>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock TextAlignment="Center">Deck Plate</TextBlock>
+                <StackPanel Name="calibrateControlPanel"  Orientation="Horizontal">
+                    <TextBlock  TextAlignment="Center">Deck Plate</TextBlock>
                     <ComboBox VerticalAlignment="Center" IsTabStop="False" x:Name="cboDeckPlate" ItemsSource="{Binding DeckPlateOptions}" SelectionChanged="cboDeckPlate_SelectionChanged"  />
                     <TextBlock  x:Name="txtNodeName" Margin="40,0,0,0" 
                         Text="{Binding NodeNameLocal}"></TextBlock>

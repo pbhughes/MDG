@@ -33,6 +33,7 @@
                     Grid.Row="0" Grid.ColumnSpan="2">
             <draft:PrimaryDraftMeasurementBox 
                 x:Name="calculatedDraft" 
+                ShowCalibrateControlPanel="Hidden"
                 RawReading="{Binding CurrentFreeboard}"
                 BargeDepth="{Binding BargeDepth}"
                 DeckPlate="{Binding DeckPlate}"
