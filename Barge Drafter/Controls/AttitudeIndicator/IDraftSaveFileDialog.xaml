@@ -27,12 +27,17 @@
             </Border>
             
             <ScrollViewer >
-                <TextBlock VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="txtPrintData"></TextBlock>
+                <TextBlock
+                    VerticalAlignment="Stretch" 
+                    HorizontalAlignment="Stretch" 
+                    x:Name="txtPrintData"></TextBlock>
             </ScrollViewer>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right">
             <Button Click="Save_Click">Save</Button>
             <Button Click="Print_Button_Click">Print</Button>
+            <Button Click="Email_Click">Email</Button>
+            <Button Click="Publish_Click">Publish</Button>
             <Button IsCancel="True">Cancel</Button>
         </StackPanel>
     </Grid>

@@ -26,10 +26,19 @@ namespace MDG.Visuals
             {
                 SaveFileDialog saveFileDialog = new SaveFileDialog ( );
                 saveFileDialog.DefaultExt = ".txt";
+                saveFileDialog.FileName = string.Format("{0}_{1}_{2}_{3}", 
+                    DateTime.Now.Month,DateTime.Now.Day,DateTime.Now.Year, txtBargeID.Text);
                 saveFileDialog.Filter =  "Text documents (.txt)|*.txt";
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath ( Environment.SpecialFolder.MyDocuments );
+                saveFileDialog.ValidateNames = false;
+                string dataToPrint = string.Format("Barge ID \t {0} {1}{1}{2}", 
+                    txtBargeID.Text.ToUpper(),
+                    Environment.NewLine, txtPrintData.Text);
+
                 if (saveFileDialog.ShowDialog ( ) == true)
-                    File.WriteAllText ( saveFileDialog.FileName, txtPrintData.Text );
+                    File.WriteAllText ( saveFileDialog.FileName, dataToPrint );
+
+
             }
             catch (Exception ex)
             {
@@ -70,8 +79,14 @@ namespace MDG.Visuals
             
         }
 
-       
+        private void Email_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This feature would email the results using the clients email client, Not yet implemented.");
+        }
 
-
+        private void Publish_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This feature would publish the results via the web to bargedata.com for storage and tracking, Not yet implemented.");
+        }
     }
 }
