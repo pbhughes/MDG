@@ -5,6 +5,9 @@ using System.Windows.Data;
 using System.Windows.Media;
 using MDG.Model;
 using System.Windows.Media.Animation;
+using System.Xml;
+using System.Xml.Linq;
+using System.IO;
 
 namespace MDG.Visuals
 {
@@ -13,6 +16,7 @@ namespace MDG.Visuals
     /// </summary>
     public partial class TelemetryMeter 
     {
+        private string _boxLocationFile = "boxlocations.xml";
 
         public TelemetryMeter()
         {
@@ -57,24 +61,66 @@ namespace MDG.Visuals
 
         private void cmdSwap_Click ( object sender, RoutedEventArgs e )
         {
+            int yellowColumn;
+            int blackColumn;
+
             if (Grid.GetColumn ( yellowBoxPrimary ) == 3)
             {
+                yellowColumn = 0;
+                blackColumn = 3;
                 Grid.SetColumn ( yellowBoxPrimary, 0 );
                 Grid.SetColumn ( yellowBoxSecondary, 0 );
                 Grid.SetColumn ( yellowTileAngle, 0 );
-                Grid.SetColumn(blackBoxPrimary,3);
+                Grid.SetColumn ( blackBoxPrimary, 3 );
                 Grid.SetColumn ( blackBoxSecondary, 3 );
                 Grid.SetColumn ( blackTileAngle, 3 );
             }
             else
             {
+                yellowColumn = 3;
+                blackColumn = 0;
                 Grid.SetColumn ( yellowBoxPrimary, 3 );
                 Grid.SetColumn ( yellowBoxSecondary, 3 );
                 Grid.SetColumn ( yellowTileAngle, 3 );
-                Grid.SetColumn(blackBoxPrimary,0);
+                Grid.SetColumn ( blackBoxPrimary, 0 );
                 Grid.SetColumn ( blackBoxSecondary, 0 );
                 Grid.SetColumn ( blackTileAngle, 0 );
             }
+
+            try
+            {
+                
+                XmlWriterSettings settings = new XmlWriterSettings();
+                settings.CheckCharacters = true;
+                settings.Indent = true;
+                settings.IndentChars = "\t";
+                settings.OmitXmlDeclaration = true;
+                settings.ConformanceLevel = ConformanceLevel.Fragment;
+
+                using (XmlWriter xwr = XmlWriter.Create(_boxLocationFile, settings))
+                {
+                    xwr.WriteStartElement("position");
+                    xwr.WriteStartElement("boxes");
+                    xwr.WriteStartElement("box");
+                    xwr.WriteAttributeString("color", "yellow");
+                    xwr.WriteAttributeString("column", yellowColumn.ToString());
+                    xwr.WriteEndElement();
+                    xwr.WriteStartElement("box");
+                    xwr.WriteAttributeString("color", "black");
+                    xwr.WriteAttributeString("column", blackColumn.ToString());
+                    xwr.WriteEndElement();
+
+                    xwr.WriteEndElement();
+                    xwr.WriteEndElement();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+
         }
 
         
@@ -103,8 +149,33 @@ namespace MDG.Visuals
             }
         }
 
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (File.Exists(_boxLocationFile))
+                {
+                    XmlDocument xDoc = new XmlDocument();
+                    xDoc.Load(_boxLocationFile);
+                    XmlNode yellow = xDoc.SelectSingleNode("//boxes/box[@color='yellow']").Attributes["column"];
+                    XmlNode black = xDoc.SelectSingleNode("//boxes/box[@color='black']").Attributes["column"];
+                    int yellowColumn = int.Parse(yellow.Value);
+                    int blackColumn = int.Parse(black.Value);
 
+                    Grid.SetColumn(yellowBoxPrimary, yellowColumn);
+                    Grid.SetColumn(yellowBoxSecondary, yellowColumn);
+                    Grid.SetColumn(yellowTileAngle, yellowColumn);
+                    Grid.SetColumn(blackBoxPrimary, blackColumn);
+                    Grid.SetColumn(blackBoxSecondary, blackColumn);
+                    Grid.SetColumn(blackTileAngle, blackColumn);
+                }
 
-       
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }

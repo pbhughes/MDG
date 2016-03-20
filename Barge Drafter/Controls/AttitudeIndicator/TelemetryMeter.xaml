@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MDG.Visuals"
              xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-             mc:Ignorable="d" d:DesignHeight="600" d:DesignWidth="900">
+             mc:Ignorable="d" d:DesignHeight="600" d:DesignWidth="900"
+             Loaded="UserControl_Loaded">
     <UserControl.Resources>
         
         <Style TargetType="local:PrimaryDraftMeasurementBox">
