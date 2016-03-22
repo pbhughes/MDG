@@ -1307,6 +1307,7 @@ namespace MDG.Model
         {
             try
             {
+                ReadSettings();
                 if (_bw.IsBusy && _bw.CancellationPending)
                 {
                     MessageBox.Show("Waiting on read thread to stop, try again", DIALOG_TITLE, MessageBoxButton.OK,
