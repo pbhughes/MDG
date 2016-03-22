@@ -65,8 +65,7 @@ namespace MDG.Visuals
             try
             {
                 var barge = ((BargeModel) this.DataContext);
-                StringBuilder sb = new StringBuilder("I-Draft Draft Ticket \n");
-                sb.AppendLine(string.Format("Date: {0,10}", DateTime.Now.ToShortDateString()));
+                StringBuilder sb = new StringBuilder();
                 sb.AppendLine(string.Format("Light Draft: {0,10}", barge.LightDraft));
                 sb.AppendLine ( string.Format ("Heavy Draft: {0,10}", barge.HeavyDraft ) );
                 sb.AppendLine(
@@ -84,7 +83,7 @@ namespace MDG.Visuals
                 sv.WindowStartupLocation = WindowStartupLocation.Manual;
                 sv.Top = 25;
                 sv.Left = 25;
-                sv.Title = "I-Draft Draft Ticket";
+                sv.Title = "I-Draft Ticket";
                 sv.ShowDialog();
 
             }

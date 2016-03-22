@@ -31,9 +31,7 @@ namespace MDG.Visuals
                 saveFileDialog.Filter =  "Text documents (.txt)|*.txt";
                 saveFileDialog.InitialDirectory = Environment.GetFolderPath ( Environment.SpecialFolder.MyDocuments );
                 saveFileDialog.ValidateNames = false;
-                string dataToPrint = string.Format("Barge ID \t {0} {1}{1}{2}", 
-                    txtBargeID.Text.ToUpper(),
-                    Environment.NewLine, txtPrintData.Text);
+                string dataToPrint = txtPrintData.Text;
 
                 if (saveFileDialog.ShowDialog ( ) == true)
                     File.WriteAllText ( saveFileDialog.FileName, dataToPrint );
@@ -55,11 +53,18 @@ namespace MDG.Visuals
         {
             if (e.Key == Key.Enter)
             {
-                string txt = txtPrintData.Text;
-                txt = txt.Replace ( "I-Draft Draft Ticket",
-                                  string.Format ( "I-Draft Draft Ticket \nBarge ID: {0}", txtBargeID.Text ) );
-                txtPrintData.Text = txt;
+                string newText = SetTicketContent();
+
+                txtPrintData.Text = newText;
             }
+        }
+
+        private string SetTicketContent()
+        {
+            string txt = txtPrintData.Text;
+            string newText = string.Format("I-DRAFT TICKET {0}***************************************{0}Hull ID: {1} {0}Record Date: {2} {0}{3}",
+                Environment.NewLine, txtBargeID.Text, DateTime.Now.ToShortDateString(), txt);
+            return newText;
         }
 
         private void Print_Button_Click ( object sender, RoutedEventArgs e )
@@ -87,6 +92,17 @@ namespace MDG.Visuals
         private void Publish_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("This feature would publish the results via the web to bargedata.com for storage and tracking, Not yet implemented.");
+        }
+
+        private void SendText_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This feature would text the tow company or the tow driver, Not yet implemented.");
+
+        }
+
+        private void splitButton_Click(object sender, RoutedEventArgs e)
+        {
+            splitButton.IsOpen = true;
         }
     }
 }

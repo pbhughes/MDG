@@ -648,7 +648,7 @@ namespace MDG.Model
             }
         }
 
-        private void ReadSettings ( )
+        public void ReadSettings ( )
         {
             XDocument xdoc;
             if (File.Exists(SETTINGS_FILE_NAME))

@@ -40,7 +40,9 @@
                           VerticalAlignment="Center"
                         Width="99" Visibility="Collapsed"  ItemsSource="{Binding ComPorts}">
                 </ComboBox>-->
-                <Button HorizontalAlignment="Left" Margin="5" Command="{Binding TakeLightDraftReadingCommand}">Record Starting Draft</Button>
+                <Button HorizontalAlignment="Left" 
+                        Margin="5" 
+                        Command="{Binding TakeLightDraftReadingCommand}">Record Starting Draft</Button>
                 <TextBlock Height="26" Width="100" Padding="0,3,0,0"  Text="{Binding LightDraft}"></TextBlock>
                 <Button HorizontalAlignment="Right"  Margin="5" Command="{Binding TakeHeavyDraftReadingCommand}">Record Ending Draft</Button>
                 <TextBlock  Height="26" Width="100" Padding="0,3,0,0" VerticalAlignment="Center" Text="{Binding HeavyDraft}"></TextBlock>
